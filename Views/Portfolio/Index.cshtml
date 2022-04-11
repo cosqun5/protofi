@@ -1,0 +1,33 @@
+﻿@*@using Portfolio.Models.Class
+@model List<Portfoli>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+<br />
+<h2>Portfolio</h2>
+<br />
+<table class="table table-active">
+    <tr>
+        <td>#</td>
+        <td>Name</td>
+        <td>Categori</td>
+        <td>Delete</td>
+        <td>Edit</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.PName</td>
+            <td>@item.Photo</td>
+            <td>@item.Categories.CName</td>
+            <td><a href="~/Portfolio/Delete/@item.Portfolioid" class="btn btn-danger">Sil</a> </td>
+            <td><a href="~/Portfolio/Update/@item.Portfolioid" class="btn btn-danger">Sil</a> </td>
+
+        </tr>
+    }
+</table>
+<a href="~/Portfolio/Create" class="btn btn-primary" style="width:120px;"> Ekle</a>*@
+
+
+

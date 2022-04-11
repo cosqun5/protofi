@@ -1,0 +1,22 @@
+﻿@model Portfolio.Models.Class.Portfoli
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+<br />
+<h2>Create</h2>
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.PName)
+    @Html.TextBoxFor(x => x.PName, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Photo)
+    @Html.TextBoxFor(x => x.Photo, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Categories.Categoriid)
+    @Html.DropDownListFor(x => x.Categoriid, (List<SelectListItem>)ViewBag.deyisken, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>
+
+

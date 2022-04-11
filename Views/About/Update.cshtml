@@ -1,0 +1,47 @@
+﻿@model Portfolio.Models.Class.About
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<br />
+<h2>Update</h2>
+<br />
+@using (Html.BeginForm("Update1", "About", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.HiddenFor(x => x.Aboutid)
+    @Html.LabelFor(x => x.Name)
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Surname)
+    @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Address)
+    @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Experience)
+    @Html.TextBoxFor(x => x.Experience, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Available)
+    @Html.TextBoxFor(x => x.Available, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Completed)
+    @Html.TextBoxFor(x => x.Completed, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Durum)
+    @Html.TextBoxFor(x => x.Durum, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Email)
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Information)
+    @Html.TextBoxFor(x => x.Information, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Phone)
+    @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-warning">Update</button>
+</div>
+}
+

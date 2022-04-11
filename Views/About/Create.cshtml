@@ -1,0 +1,41 @@
+﻿@model Portfolio.Models.Class.About
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<br />
+<h2>About</h2>
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.Name)
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Surname)
+    @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Address)
+    @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Available)
+    @Html.TextBoxFor(x => x.Available, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Completed)
+    @Html.TextBoxFor(x => x.Completed, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Email)
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Phone)
+    @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Information)
+    @Html.TextBoxFor(x => x.Information, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Experience)
+    @Html.TextBoxFor(x => x.Experience, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-info" style="width:150px;">Save</button>
+</form>
+
